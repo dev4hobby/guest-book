@@ -1,0 +1,76 @@
+.background {
+  background-color: green;
+  max-width: 450px;
+  width: 100vw;
+  height: 100vh;
+  
+  background-image: url("/images/background.png");
+  background-position: center;
+  background-size: cover;
+
+  margin: auto;
+}
+
+.title {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  color: #3f3732;
+}
+
+.title > h1 {
+  font-size: 22px;
+  background-color: white;
+
+  padding: 8px 16px;
+  border-radius: 16px;
+
+  margin-bottom: 16px;
+}
+
+.title > p {
+  font-size: 18px;
+}
+
+.title > p > span {
+  font-size: 22px;
+}
+
+@font-face {
+  font-family: 'Nanum Pen Script';
+  src: url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+}
+
+/* * {
+  font-family: 'Nanum Pen Script', cursive;
+} */
+
+.btn {
+  width: 300px;
+  height: 50px;
+  background-color: #3f3732;
+
+  color: white;
+
+  font-size: 18px;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 16px;
+  left: calc(50% - 150px;)
+}
+
+.box {
+  left: calc(15%);
+  top: calc(40%);
+  position: absolute;
+}
