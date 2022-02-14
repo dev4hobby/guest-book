@@ -1,0 +1,6 @@
+{
+  "MONGO_HOST":"",
+  "MONGO_USER":"",
+  "MONGO_PASSWORD":"",
+  "MONGO_NAME":"guestbook"
+}
