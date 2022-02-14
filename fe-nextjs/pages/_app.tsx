@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        {/* 여기 공유할 때 사용할 메타정보 넣어줘.. (이미지랑 텍스트) */}
       </Head>
       <Component {...pageProps} />
     </>
