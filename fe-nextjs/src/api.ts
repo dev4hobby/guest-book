@@ -1,4 +1,4 @@
-export const postComment = async (): Promise<Comment> => {
+export const postComment = async (): Promise<any> => {
   const message = await prompt('올해 계획을 입력해주세요..!')
   if (!message) {
     return {result: "fail"} as any
@@ -8,7 +8,7 @@ export const postComment = async (): Promise<Comment> => {
     return {result: "fail"} as any
   }
   message.replace(';','').replace('\\','')
-  const res = await fetch(`${process.env.NEXT_PUBLIC_GB_API_BASE_URL}/comments`, {
+  await fetch(`${process.env.NEXT_PUBLIC_GB_API_BASE_URL}/comments`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -17,5 +17,5 @@ export const postComment = async (): Promise<Comment> => {
       content: message
     })
   })
-  return res.json()
+  location.reload()
 }

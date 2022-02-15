@@ -11,3 +11,5 @@ DATABASE = {
     "password": getenv("MONGO_PASSWORD"),
     "name": getenv("MONGO_NAME"),
 }
+
+MAX_COMMENT_LENGTH = getenv("MAX_COMMENT_LENGTH", 10)

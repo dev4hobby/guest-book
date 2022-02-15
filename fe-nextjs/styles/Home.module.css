@@ -68,9 +68,3 @@
   bottom: 16px;
   left: calc(50% - 150px;)
 }
-
-.box {
-  left: calc(15%);
-  top: calc(40%);
-  position: absolute;
-}

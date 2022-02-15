@@ -20,17 +20,16 @@ const Home: NextPage = () => {
     return (
       <div className={styles.background}>
       <div className={styles.title}>
-        <h1>올해 계획이 있으신가요?</h1>
-        <p>공유된 계획: <span>{comments.length}개</span></p>
-        <div className={styles.btn} onClick={postComment}>계획 공유하기</div>
+        <h1>무슨 생각 하고있나요?</h1>
+        <p>담벼락에 적힌 글: <span>{comments.length}개</span></p>
+        <div className={styles.btn} onClick={postComment}>벽에 낙서하기</div>
       </div>
       <div className={styles.box}>
-        {comments.map((comment) => (
-          
+        {comments.length === 0 ? ()=>{} : comments.map((comment) => (
           <Image
             key={key++}
             onClick={() => {alert(comment.content)}}
-            src={`/images/object${getRandomInt(1, 3)}.png`}
+            src={`/images/object${getRandomInt(1, 8)}.png`}
             width={40}
             height={40}
             alt="goal"
